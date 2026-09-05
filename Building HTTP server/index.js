@@ -4,7 +4,9 @@ const myServer = http.createServer((req, res) => {
     console.log(req)
     res.end('hello  bro `!');    
 });
+q
+
 
 myServer.listen(8000, () => {
-    console.log('Server is running on port 8000');
+    console.log('Server is running in port 8000');
 });
