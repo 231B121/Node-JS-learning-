@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "first_name": "Rahul",
+        "last_name": "Sharma",
+        "email": "rahul@gmail.com",
+        "gender": "Male",
+        "job_title": "Developer"
+    },
+    {
+        "id": 2,
+        "first_name": "Priya",
+        "last_name": "Patel",
+        "email": "priya@gmail.com",
+        "gender": "Female",
+        "job_title": "Designer"
+    },
+    {
+        "id": 3,
+        "first_name": "Amit",
+        "last_name": "Kumar",
+        "email": "amit@gmail.com",
+        "gender": "Male",
+        "job_title": "Manager"
+    }
+]
