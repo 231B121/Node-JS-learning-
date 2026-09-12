@@ -5,12 +5,12 @@ async function handleGetAllUsers(req, res) {
   return res.json(allDbUsers);
 }
 
-async function handlegetUserById(req, res) {
-    const user = await User.findById(req.params.id);
+async function handleGetUserById(req, res) {
+  const user = await User.findById(req.params.id);
 
-    if (!user) return res.status(404).json({ error: "user not found" });
-    return res.json(user);
-  }
+  if (!user) return res.status(404).json({ error: "user not found" });
+  return res.json(user);
+}
 
 async function handleUpdateUserById(req, res) {
     await User.findByIdAndUpdate(req.params.id, {
@@ -53,9 +53,10 @@ async function handleCreateUser(req, res) {
 }
 
 module.exports = {
-    handleGetAllUsers,
-    handlegetUserById,
-    handleUpdateUserById,
-    handleDeleteUserById,
-    handleCreateUser,
+  handleGetAllUsers,
+  handleGetUserById,
+  handlegetUserById: handleGetUserById, // backwards-compatible alias
+  handleUpdateUserById,
+  handleDeleteUserById,
+  handleCreateUser,
 };
